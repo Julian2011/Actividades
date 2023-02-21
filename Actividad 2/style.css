@@ -1,0 +1,28 @@
+/* header */
+
+
+/* body */
+
+.container{
+    display: flex;
+}
+
+.cards{
+    width: 300px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.card-body h2{
+    text-align: center;
+}
+
+.card-body p{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
