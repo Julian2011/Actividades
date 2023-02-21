@@ -5,16 +5,35 @@
 
 .container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
 }
 
 .cards{
     width: 300px;
     margin: 10px;
-    background-color: aqua;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .card-img img{
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-body h2{
@@ -25,4 +44,29 @@
     text-align: justify;
     margin-bottom: 10px;
     padding: 5px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer button{
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s;    
+}
+
+.card-footer button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
