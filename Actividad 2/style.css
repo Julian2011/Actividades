@@ -1,4 +1,63 @@
 /* header */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-lista{
+    list-style: none;
+}
+
+.nav-lista li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-lista li:hover{
+    transform: scale(1.1);
+}
+
+.nav-lista a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-lista a:hover{
+    color: red;
+}
+
+.btn button{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn button:hover{
+    background-color: red;
+    color: black;
+    transform: scale(1.1);
+}
+
 
 
 /* body */
@@ -90,7 +149,7 @@ footer{
 }
 
 .footer-container h3{
-    font-size: ;
+    font-size: 50px;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
